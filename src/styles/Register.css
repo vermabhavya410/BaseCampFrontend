@@ -1,11 +1,11 @@
-/* Reset */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Full screen gradient */
+
 body {
   font-family: "Poppins", sans-serif;
   height: 100vh;
@@ -15,7 +15,7 @@ body {
   align-items: center;
 }
 
-/* Form Card */
+
 form {
   width: 350px;
   padding: 30px;
@@ -29,13 +29,13 @@ form {
   color: #fff;
 }
 
-/* Labels */
+
 label {
   font-size: 14px;
   font-weight: 500;
 }
 
-/* Inputs */
+
 input {
   padding: 12px;
   border-radius: 8px;
@@ -44,12 +44,12 @@ input {
   font-size: 14px;
 }
 
-/* Input focus */
+
 input:focus {
   box-shadow: 0 0 5px #fff;
 }
 
-/* Button */
+
 button {
   margin-top: 10px;
   padding: 12px;
