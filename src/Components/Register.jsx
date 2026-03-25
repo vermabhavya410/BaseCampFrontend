@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import API from "../services/api";
+import "../styles/Register.css";
 
 function Register(){
 
@@ -64,7 +65,9 @@ try {
        <label htmlFor="password">Password:</label>
       <input type="password" id="password" name="password" placeholder="Enter Your Password" onChange={handlechange} required/>
 
-      <button type="submit">{loading ? "Creating..." : "Sign Up"}</button>
+      <button type="submit" disabled={loading}>
+        {loading ? "Creating..." : "Sign Up"}
+      </button>
     </form>
     </div>
   )

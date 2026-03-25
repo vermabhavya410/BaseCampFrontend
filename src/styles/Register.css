@@ -1,83 +1,68 @@
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
+/* Full screen gradient */
 body {
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: "Poppins", sans-serif;
   height: 100vh;
+  background: linear-gradient(135deg, #5f7cff, #7b2cbf);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Container */
-div {
-  background: #ffffff;
-  padding: 2rem;
-  border-radius: 12px;
-  width: 350px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-
-/* Heading */
-h1 {
-  text-align: center;
-  margin-bottom: 1.5rem;
-  color: #333;
-}
-
-/* Form styling */
+/* Form Card */
 form {
+  width: 350px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
+  gap: 15px;
+  color: #fff;
 }
 
 /* Labels */
 label {
-  font-size: 0.9rem;
-  margin-bottom: 0.3rem;
-  color: #555;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 /* Inputs */
 input {
-  padding: 0.6rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
   outline: none;
-  transition: 0.3s;
+  font-size: 14px;
 }
 
-/* Input focus effect */
+/* Input focus */
 input:focus {
-  border-color: #667eea;
-  box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+  box-shadow: 0 0 5px #fff;
 }
 
 /* Button */
 button {
-  padding: 0.7rem;
-  background: #667eea;
-  color: white;
+  margin-top: 10px;
+  padding: 12px;
   border: none;
-  border-radius: 6px;
-  font-size: 1rem;
+  border-radius: 8px;
+  background: #fff;
+  color: #5f7cff;
+  font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
 }
 
-/* Button hover */
 button:hover {
-  background: #5a67d8;
-}
-
-/* Disabled/loading state */
-button:disabled {
-  background: #aaa;
-  cursor: not-allowed;
+  background: #eaeaea;
 }
