@@ -12,7 +12,7 @@ function VerifyEmail(){
       try {
         await API.get(`/verify-email/${rawToken}`);
         alert("Email verified successfully! You can now log in.");
-        navigate("/"); // redirect to login
+        navigate("/login"); // redirect to login
       } catch (error) {
         console.log(error);
         alert("Email verification failed. Please try again.");

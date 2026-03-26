@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import API from "../services/api";
 import "../styles/Login.css";
 
@@ -39,11 +40,17 @@ function Login() {
 
   return (
     <>
-      <h1>Login</h1>
+      <h1>Sign in</h1>
       <form>
         <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} />
         <input type="password" name="password" placeholder="Password" value={formData.password} onChange={handleChange} />
         <button type="submit" onClick={login}>{loading ? "Logging in..." : "Login"}</button>
+         <p>
+        <Link to="/forgot-password"  style={{ color: "white", textDecoration: "underline" }}>Forgot Your Password?</Link>
+        </p>
+          <p>
+        <Link to="/"  style={{ color: "white", textDecoration: "underline" }}>New User?Sign Up</Link>
+        </p>
       </form>
     </>
   )
